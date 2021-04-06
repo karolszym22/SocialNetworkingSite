@@ -6,11 +6,7 @@ const PostWrapper = () =>
 (
     <ul>
       {usersComments.map(post => (
-        <PostItem
-            image = {[post.image]}
-            name={[post.name]}
-            postContent = {[post.postContent]}
-        />
+        <PostItem {...post}/>
 ))}
     </ul>
 );
