@@ -1,5 +1,5 @@
 import React from 'react'
-import PostWrapper from './components/PostWrapper';
+import PostWrapper from './components/PostWrapper/PostWrapper';
 
 const App = () => 
 (

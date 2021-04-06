@@ -1,12 +1,10 @@
 import React from 'react';
-
+import PostItem from './PostItem/PostItem.js'
 
 const PostWrapper = () => 
 (
     <ul>
-        <li>list item 1</li>
-        <li>list item 2</li>
-        <li>list item 3</li>
+       <PostItem/>
     </ul>
 );
 
