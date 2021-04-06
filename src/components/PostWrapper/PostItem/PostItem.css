@@ -1,4 +1,34 @@
-.PostItemWrapper
+.postItem__wrapper
 {
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.postItem__imgage
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.postItem__name
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.postItem__description
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.postItem__button
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
