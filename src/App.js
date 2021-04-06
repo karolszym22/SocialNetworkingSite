@@ -4,9 +4,9 @@ import PostWrapper from './components/PostWrapper/PostWrapper';
 const App = () => 
 (
   <div>
-      <PostWrapper>
-
-      </PostWrapper>
+    <PostWrapper />
+    <PostWrapper />
+    <PostWrapper /> 
   </div>
 )
 
