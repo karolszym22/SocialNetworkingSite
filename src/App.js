@@ -2,6 +2,8 @@ import React from 'react'
 import PostItem from './components/PostWrapper/PostItem/PostItem';
 import PostWrapper from './components/PostWrapper/PostWrapper';
 import './index.css';
+import Form from './components/Form/Form';
+
 
 const inistialStateArray = 
 [
@@ -39,13 +41,22 @@ class App extends React.Component
   state = {
 
     items: [...inistialStateArray],
-
+    
 }
-  
+ 
+addItem = (e) => {
+  e.preventDefault();
+  console.log(e.target[0].value);
+  console.log(e.target[1].value);
+  console.log(e.target[2].value);
+  console.log(e.target[3].value);
+}
+
   render()
   {
     return(
       <div>
+        <Form submitFn={this.addItem} />
         <PostWrapper
            items={this.state.items}
            />
