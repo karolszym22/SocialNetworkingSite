@@ -1,12 +1,12 @@
 import React from 'react';
 import PostItem from './PostItem/PostItem.js'
-import {usersComments} from '../../data/usersPosts'
 
-const PostWrapper = () => 
+
+const PostWrapper = (props) => 
 (
     <ul>
-      {usersComments.map(post => (
-        <PostItem key={post.id} {...post}/>
+      {props.items.map(item => (
+        <PostItem key={item.id} {...item}/>
 ))}
     </ul>
 );
