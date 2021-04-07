@@ -1,8 +1,8 @@
 import React from 'react'
-import PostItem from './components/PostWrapper/PostItem/PostItem';
-import PostWrapper from './components/PostWrapper/PostWrapper';
-import './index.css';
-import Form from './components/Form/Form';
+import PostItem from '../../components/PostWrapper/PostItem/PostItem';
+import PostWrapper from '../../components/PostWrapper/PostWrapper';
+import '../../index.css';
+import Form from '../../components/Form/Form';
 
 
 const inistialStateArray = 
@@ -36,7 +36,7 @@ const inistialStateArray =
 },
 ]
 
-class App extends React.Component
+class Root extends React.Component
 {
   state = {
 
@@ -79,4 +79,4 @@ addItem = (e) => {
     )
   }
 }
-export default App;
+export default Root;
