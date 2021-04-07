@@ -20,7 +20,6 @@ export const usersComments = [
     {
         name: "Rafał",
         lastName: "Szewczyk",
-        postContent: "Jestem Rafał, i robię pseudo facebooka, tak więc....no tak",
         image: rafał,
         id: "post3"
     },

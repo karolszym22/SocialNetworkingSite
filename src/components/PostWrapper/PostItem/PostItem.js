@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './PostItem.css';
+
 
 
 const PostItem = ({
@@ -24,5 +26,16 @@ const PostItem = ({
       
     </li>
 )
+PostItem.propTypes = 
+{
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    postContent: PropTypes.string.isRequired,
+}
+
+PostItem.defaultProps = 
+{
+    postContent: 'cos tam cos tam'
+}
 
 export default PostItem;
