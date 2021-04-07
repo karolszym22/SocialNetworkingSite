@@ -46,11 +46,26 @@ class App extends React.Component
  
 addItem = (e) => {
   e.preventDefault();
-  console.log(e.target[0].value);
-  console.log(e.target[1].value);
-  console.log(e.target[2].value);
-  console.log(e.target[3].value);
-}
+
+  const newItem = 
+  {
+    name: e.target[0].value,
+    lastName: e.target[1].value,
+    postContent: e.target[2].value,
+    image: e.target[3].value,
+    
+  }
+   
+    this.setState(prevState => ({
+      items: [...prevState.items, newItem],
+    }));
+
+    e.target.reset();
+
+ }
+
+  
+
 
   render()
   {

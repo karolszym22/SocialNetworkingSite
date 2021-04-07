@@ -1,0 +1,10 @@
+.wrapper {
+  -webkit-animation: appear .5s ease;
+          animation: appear .5s ease;
+}
+
+.wrapper .submit {
+  border: 0px;
+  height: 50px;
+}
+/*# sourceMappingURL=Form.module.css.map */
