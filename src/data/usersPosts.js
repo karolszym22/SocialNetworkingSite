@@ -8,24 +8,28 @@ export const usersComments = [
         lastName: "Szymański",
         postContent: "Jestem Karol, i robię pseudo facebooka, tak więc....no tak",
         image: profile,
+        id: "post1"
     },
     {
         name: "Radek",
         lastName: "Kaczorowski",
         postContent: "Jestem Radek, i robię pseudo facebooka, tak więc....no tak",
         image: radek,
+        id: "post2"
     },
     {
         name: "Rafał",
         lastName: "Szewczyk",
         postContent: "Jestem Rafał, i robię pseudo facebooka, tak więc....no tak",
         image: rafał,
+        id: "post3"
     },
     {
         name: "Dorota",
         lastName: "Szymańska",
         postContent: "Jestem Dorota, i robię pseudo facebooka, tak więc....no tak",
         image: dorota,
+        id: "post4"
     }
 ]
 

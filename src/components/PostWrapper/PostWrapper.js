@@ -6,7 +6,7 @@ const PostWrapper = () =>
 (
     <ul>
       {usersComments.map(post => (
-        <PostItem {...post}/>
+        <PostItem key={post.id} {...post}/>
 ))}
     </ul>
 );
