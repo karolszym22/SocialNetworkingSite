@@ -5,8 +5,8 @@ import style from './Navigation.module.scss'
 const Navigation = () =>
 (
     <ul className={style.wrapper}>
-        <li><Link to="/">Posts</Link></li>
-        <li><Link to="/profileView">Profile</Link></li>
+        <li className={style.navElement}><Link to="/">Posts</Link></li>
+        <li className={style.navElement}><Link to="/profileView">Profile</Link></li>
     </ul>
 )
 
