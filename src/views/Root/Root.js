@@ -1,9 +1,12 @@
 import React from 'react'
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import PostItem from '../../components/PostWrapper/PostItem/PostItem';
 import PostWrapper from '../../components/PostWrapper/PostWrapper';
 import '../../index.css';
 import Form from '../../components/Form/Form';
-
+import PostView from '../PostView/PostView'
+import ProfileView from '../ProfileView/ProfileView'
+import Navigation from '../../components/Navigation/Navigation';
 
 const inistialStateArray = 
 [
@@ -70,12 +73,17 @@ addItem = (e) => {
   render()
   {
     return(
-      <div>
-        <Form submitFn={this.addItem} />
-        <PostWrapper
-           items={this.state.items}
-           />
-      </div>
+      <BrowserRouter>
+      <>
+        <Navigation />
+        <h1>Hello World</h1>
+      <Switch>
+        <Route exact path="/" component={PostView}/>
+        <Route path="/profileView" component={ProfileView}/>
+        </Switch>
+      </>  
+
+      </BrowserRouter>
     )
   }
 }
