@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.button` //wiecej info potem
+const ReactionButton = styled.button` //wiecej info potem
 font-family: 'Montserrat', sans-serif;
 background-color: ${({theme}) => theme.primary};
 border: none;
@@ -9,4 +9,4 @@ width: 100px;
 margin: 0px 10px;
 color: white;
 `
-export default Button
+export default ReactionButton

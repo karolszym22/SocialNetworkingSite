@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/atoms/Button/ReactionButton';
+import ReactionButton from '../components/atoms/Button/reactionButtons/ReactionButton';
 import GlobalStyle from '../theme/GlobalStyle';
 import {ThemeProvider} from 'styled-components';
 import { theme } from '../theme/mainTheme';
@@ -14,8 +14,8 @@ const Root = () =>
       <>
        <Input search></Input>
        <h1>Siema Karol</h1>
-       <Button>Like it</Button>
-       <Button>Comment it</Button>
+       <ReactionButton>Like it</ReactionButton>
+       <ReactionButton>Comment it</ReactionButton>
       </> 
     </ThemeProvider>
   </div>
