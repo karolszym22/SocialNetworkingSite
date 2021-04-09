@@ -3,7 +3,7 @@ import Button from '../components/atoms/Button/ReactionButton';
 import GlobalStyle from '../theme/GlobalStyle';
 import {ThemeProvider} from 'styled-components';
 import { theme } from '../theme/mainTheme';
-
+import Input from '../components/atoms/Input/input';
 
 
 const Root = () => 
@@ -12,6 +12,7 @@ const Root = () =>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
       <>
+       <Input search></Input>
        <h1>Siema Karol</h1>
        <Button>Like it</Button>
        <Button>Comment it</Button>
