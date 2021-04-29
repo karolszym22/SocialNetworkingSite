@@ -8,13 +8,15 @@ const PostsContainer = ({ children }) => (
     
     <div>
     <GlobalStyle />
-    <ThemeProvider theme={theme}>
-      <>
-       {children}
-      </> 
+    <ThemeProvider theme={theme}>{children}
     </ThemeProvider>
   </div>
 
 );
+
+PostsContainer.prototypes = 
+{
+    children: PropTypes.element.isRequired,
+}
 
 export default PostsContainer;
