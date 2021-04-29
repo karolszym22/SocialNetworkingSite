@@ -11,13 +11,7 @@ padding: 17px 30px;
 const PostCard = () =>
 {
     <StyledWrapper>
-        <Heading>
-            Karol Szymański
-        </Heading>
-        <Paragraph>
-            Dobra,wstawiłem kolejny posta, sorry za to, no ale.....musiałem. Tak więc dobranoc, słodkich snów
-        </Paragraph>
-        <Button>
-       </Button>
+       
+
     </StyledWrapper>
 }

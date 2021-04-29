@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const ReactionButton = styled.button` //wiecej info potem
 font-family: 'Montserrat', sans-serif;
-background-color: ${({theme}) => theme.primary};
+background-color: ${({theme}) => theme.secondar};
 border: none;
 cursor: pointer;
 width: 100px;
