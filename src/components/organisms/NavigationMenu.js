@@ -7,6 +7,13 @@ import informationIcon from '../../assets/icons/header/information.svg'
 import messageIcon from '../../assets/icons/header/message.svg'
 import logoutIcon from '../../assets/icons/header/logout.svg'
 
+const Header = styled.div`
+
+height: 50px;
+display: flex;
+height: 100%;
+background-color: ${({theme}) => theme.primary};
+`
 
 const NavigationMenu = () =>
 (
