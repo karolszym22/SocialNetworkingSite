@@ -12,18 +12,22 @@ const Header = styled.div`
 height: 50px;
 display: flex;
 height: 100%;
-background-color: ${({theme}) => theme.primary};
+background-color: aqua;
+`
+const HeaderMenu =  styled.div`
+
 `
 
 const NavigationMenu = () =>
 (
-    <div>
+    <Header>
         <p>Fakebook</p>
-        <div>
+          
             <HeaderButton as={Link} to="/" icon={friendsIcon} />
             <HeaderButton as={Link} to='/messages' icon={messageIcon} />
             <HeaderButton as={Link} to='/informations' icon={informationIcon} />
-        </div>
-        <HeaderButton as={Link} to='/signIn' icon={logoutIcon} />
-    </div>
+            <HeaderButton as={Link} to='/signIn' icon={logoutIcon} />
+    </Header>
 )
+
+export default NavigationMenu;

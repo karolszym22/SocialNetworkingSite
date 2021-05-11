@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
 *, *::before, *::after { //przypomnieć sobie definicje
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
