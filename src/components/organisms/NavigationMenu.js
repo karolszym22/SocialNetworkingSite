@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import HeaderButton from '../atoms/Button/headerButtons/HeaderButton'
 import friendsIcon from '../../assets/icons/header/friends.svg'
 import informationIcon from '../../assets/icons/header/information.svg'
@@ -11,22 +11,35 @@ const Header = styled.div`
 
 height: 50px;
 display: flex;
-height: 100%;
-background-color: aqua;
+justify-content: space-around;
+background-color: #4268b2;
 `
-const HeaderMenu =  styled.div`
+const HeaderLogo = styled.div`
+color: white;
+display: flex;
+align-items: center;
+font-size: 18px;
+height: 100%;
 
+`
+
+const HeaderMenu =  styled.div`
+display: flex;
+align-items: center;
 `
 
 const NavigationMenu = () =>
 (
     <Header>
+        <HeaderLogo>
         <p>Fakebook</p>
-          
-            <HeaderButton as={Link} to="/" icon={friendsIcon} />
-            <HeaderButton as={Link} to='/messages' icon={messageIcon} />
-            <HeaderButton as={Link} to='/informations' icon={informationIcon} />
-            <HeaderButton as={Link} to='/signIn' icon={logoutIcon} />
+        </HeaderLogo>
+         <HeaderMenu>
+            <HeaderButton as={NavLink} to="/" icon={friendsIcon}  />
+            <HeaderButton as={NavLink} to='/messages' icon={messageIcon}  />
+            <HeaderButton as={NavLink} to='/informations' icon={informationIcon} />
+            <HeaderButton as={NavLink} to='/signIn' icon={logoutIcon}  />
+            </HeaderMenu> 
     </Header>
 )
 

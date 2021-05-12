@@ -4,14 +4,14 @@ import Paragraph from '../../atoms/Paragraph/Paragraph'
 import Heading from 'components/atoms/Heading';
 import Button from '../../atoms/Button/reactionButtons';
 
-const StyledWrapper = styled.div`
+const Container = styled.div`
 padding: 17px 30px;
 `
 
 const PostCard = () =>
 {
-    <StyledWrapper>
+    <Container>
        
 
-    </StyledWrapper>
+    </Container>
 }
