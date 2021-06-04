@@ -1,17 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import Paragraph from '../../atoms/Paragraph/Paragraph'
-import Heading from 'components/atoms/Heading';
-import Button from '../../atoms/Button/reactionButtons';
+import PostHeading from '../../atoms/Heading/PostHeading';
+
 
 const Container = styled.div`
 padding: 17px 30px;
+border: 1px solid black;
+height: 400px;
+width: 500px;
 `
 
-const PostCard = () =>
-{
-    <Container>
-       
 
+const PostCard = () =>
+(
+    <Container>
+        <p>Fakebook</p>
     </Container>
-}
+  
+)
+
+export default PostCard

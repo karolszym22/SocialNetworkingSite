@@ -3,13 +3,21 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../../theme/GlobalStyle';
 import { theme } from '../../theme/mainTheme';
-import NavigationMenu from '../organisms/NavigationMenu'
+import PostCard from '../molecules/PostCard/PostCard'
+
 const PostsContainer = ({ children }) => (
     
     <div>
+      
     <GlobalStyle />
-    <NavigationMenu/>
-    <ThemeProvider theme={theme}>{children}
+
+    
+    <ThemeProvider theme={theme}>
+    <>
+    <PostCard/>
+
+      {children}
+      </>
     </ThemeProvider>
   </div>
 

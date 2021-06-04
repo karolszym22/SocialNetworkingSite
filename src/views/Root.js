@@ -10,16 +10,18 @@ import Posts from '../views/Posts'
 import UserProfile from '../views/UserProfile'
 import NavigationMenu from '../components/organisms/NavigationMenu'
 
-
 const Root = () => 
 (
+  
   <BrowserRouter> 
+    <NavigationMenu/>
     <PostsContainer>
         <Switch>
           <Route exact path="/" component={Posts} />
-          <Route path="/PostHistory" component={PostsHistory} />
-          <Route path="/UserProfile" component={UserProfile} />
+          <Route path="/messages" component={PostsHistory} />
+          <Route path="/informations" component={UserProfile} />
         </Switch>
+        
     </PostsContainer>
   </BrowserRouter>
 )

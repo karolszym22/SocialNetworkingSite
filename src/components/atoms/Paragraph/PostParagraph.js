@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Paragraph = styled.p`
+const PostParagraph = styled.p`
   font-size: 14px;
 `;
 
-export default Paragraph;
+export default PostParagraph;
