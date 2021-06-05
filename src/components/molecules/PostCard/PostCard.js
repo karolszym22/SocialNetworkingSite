@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PostHeading from '../../atoms/Heading/PostHeading';
-
+import ReactionButton from '../../atoms/Button/reactionButtons/ReactionButton';
 
 const Container = styled.div`
 border: 1px solid black;
@@ -28,9 +28,8 @@ align-items: center;
 margin: 0px 5px;
 
 `
-const Image = styled.div`
+const Image = styled.img`
 border-radius: 50%;
-border: 1px solid black;
 height: 50px;
 width: 50px;
 background-image: url("profile.png");
@@ -53,13 +52,14 @@ const PostCard = () =>
     <Container>
       <AuthorContainer>
         <AuthorImage>
-            <Image/>
+            <Image src="https://yt3.ggpht.com/ytc/AAUvwngEMVOlwtrxr1BTvs5RFGirsuzZ6YeOvdwCv2UNUg=s900-c-k-c0x00ffffff-no-rj"/>
         </AuthorImage>
         <h4>Karol Szymański</h4>
       </AuthorContainer> 
       <PostContent>
           <p>asdsadasdasdasdasdasdas</p>
       </PostContent>
+      <ReactionButton/>
         <p>Fakebook</p>
     </Container>
   
