@@ -35,9 +35,9 @@ const NavigationMenu = () =>
         <p>Fakebook</p>
         </HeaderLogo>
          <HeaderMenu>
-            <HeaderButton as={NavLink} to="/" icon={friendsIcon}  />
-            <HeaderButton as={NavLink} to='/messages' icon={messageIcon}  />
-            <HeaderButton as={NavLink} to='/informations' icon={informationIcon} />
+            <HeaderButton as={NavLink} to="/" icon={friendsIcon} activeclass="active"  />
+            <HeaderButton as={NavLink} to='/messages' icon={messageIcon} activeclass="active"  />
+            <HeaderButton as={NavLink} to='/informations' icon={informationIcon} activeclass="active" />
             <HeaderButton as={NavLink} to='/signIn' icon={logoutIcon}  />
             </HeaderMenu> 
     </Header>
