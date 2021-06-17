@@ -8,13 +8,11 @@ import PostsContainer from '../components/templates/PostsContainer'
 import PostsHistory from '../views/PostsHistory'
 import Posts from '../views/Posts'
 import UserProfile from '../views/UserProfile'
-import NavigationMenu from '../components/organisms/NavigationMenu'
 
 const Root = () => 
 (
   
   <BrowserRouter> 
-    <NavigationMenu/>
     <PostsContainer>
         <Switch>
           <Route exact path="/" component={Posts} />

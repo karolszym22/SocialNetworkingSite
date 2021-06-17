@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PostCard from '../components/molecules/PostCard/PostCard'
+import UserPageTemplete from '../components/templates/UserPageTemplete'
 
 const Container = styled.div`
 display: flex;
@@ -9,12 +10,12 @@ align-items: center;
 `
 
 const Posts = () => (
-<Container>
+<UserPageTemplete>
     <PostCard/>
     <PostCard/>
     <PostCard/>
     <PostCard/>
-   </Container>
+</UserPageTemplete>
 );
 
 export default Posts;
