@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PostHeading from '../../atoms/Heading/PostHeading';
 import ReactionButton from '../../atoms/Button/reactionButtons/ReactionButton';
-
+import PropTypes from 'prop-types';
 const Container = styled.div`
 border: 1px solid black;
 width: 500px;
@@ -47,22 +47,35 @@ border: 1px solid black;
 
 
 
-const PostCard = () =>
+const PostCard = ({title, content, articleUrl, created}) =>
 (
     <Container>
       <AuthorContainer>
         <AuthorImage>
             <Image src="https://yt3.ggpht.com/ytc/AAUvwngEMVOlwtrxr1BTvs5RFGirsuzZ6YeOvdwCv2UNUg=s900-c-k-c0x00ffffff-no-rj"/>
         </AuthorImage>
-        <h4>Karol Szymański</h4>
+        <h4>{title}</h4>
       </AuthorContainer> 
       <PostContent>
-          <p>asdsadasdasdasdasdasdas</p>
+          <p>{content}</p>
       </PostContent>
       <ReactionButton/>
         <p>Fakebook</p>
     </Container>
   
 )
+
+PostCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  created: PropTypes.string.isRequired,
+  articleUrl: PropTypes.string,
+  content: PropTypes.string.isRequired,
+}
+
+PostCard.defaultProps = {
+  twitterName: null,
+  articleUrl: null,
+}
+
 
 export default PostCard
