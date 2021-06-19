@@ -37,10 +37,16 @@ align-items: center;
 
 const Posts = () => (
 <UserPageTemplete>
-    <PostCard/>
-    <PostCard/>
-    <PostCard/>
-    <PostCard/>
+    {posts.map(item => (
+    <PostCard
+
+      user={item.user}
+      content= {item.content}
+      key = {item.content}
+    
+    
+    
+    />) )}
 </UserPageTemplete>
 );
 
