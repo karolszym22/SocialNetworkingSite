@@ -7,23 +7,28 @@ const posts =
 [
     {
         user: 'Karol Szymański',
-        content: 'Jestem super ale React jest lepszy'
+        content: 'Jestem super ale React jest lepszy',
+        id: 1,
     },
     {
         user: 'Karol Szymański',
-        content: 'Jestem super ale JS jest lepszy'
+        content: 'Jestem super ale JS jest lepszy',
+        id: 2,
     },
     {
         user: 'Karol Szymański',
-        content: 'Jestem super ale Node jest lepszy'
+        content: 'Jestem super ale Node jest lepszy',
+        id: 3,
     },
     {
         user: 'Karol Szymański',
-        content: 'Jestem super ale Angular jest lepszy'
+        content: 'Jestem super ale Angular jest lepszy',
+        id: 4,
     },
     {
         user: 'Karol Szymański',
-        content: 'Jestem super ale MongoDB jest lepszy'
+        content: 'Jestem super ale MongoDB jest lepszy',
+        id: 5,
     },
 ]
 
@@ -37,12 +42,12 @@ align-items: center;
 
 const Posts = () => (
 <UserPageTemplete>
-    {posts.map(item => (
+    {posts.map(({user,content,id}) => (
     <PostCard
 
-      user={item.user}
-      content= {item.content}
-      key = {item.content}
+      user={user}
+      content= {content}
+      key = {id}
     
     
     

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactionButton from '../../atoms/Button/reactionButtons/ReactionButton';
 import PropTypes from 'prop-types';
+import { Redirect } from 'react-router-dom'
+
+
 const Container = styled.div`
 border: 1px solid black;
 width: 500px;
@@ -46,8 +49,21 @@ border: 1px solid black;
 
 
 
-const PostCard = ({user, content, articleUrl, created}) =>
-(
+class PostCard extends Component 
+{
+  state: {
+    redirect: false,
+  };
+
+
+
+
+
+render() {
+
+const {id,user, content, articleUrl, created} = this.props;
+
+  return (
     <Container>
       <AuthorContainer>
         <AuthorImage>
@@ -62,7 +78,9 @@ const PostCard = ({user, content, articleUrl, created}) =>
         <p>Fakebook</p>
     </Container>
   
-)
+);
+}
+}
 
 PostCard.propTypes = {
   title: PropTypes.string.isRequired,
