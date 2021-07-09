@@ -3,10 +3,12 @@ import PostDetailsTemplate from '../components/templates/PostDetailsTemplate';
 
 
 
-const PreviewPost = () => 
+const PreviewPost = ({ match }) => 
 (
     <>
-      <PostDetailsTemplate/>
+      <PostDetailsTemplate>
+        <p>sdasdasdas</p>
+      </PostDetailsTemplate>
     </>
 );
 
