@@ -4,14 +4,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import UserPageTemplete from './UserPageTemplete';
 
-const PostDetailTemplate = () => 
+const PostDetailTemplate = ({children}) => 
 (
     <UserPageTemplete>
-        <h1>Note</h1>
-        <p>
-            asdasdasdasdasdasdsadasdasdasdasdasdasdsa
-        </p>
-        <Link to="/">Powrót na główną</Link>
+       {children}
+       <Link to="/">adasdas</Link>
     </UserPageTemplete>
 )
 
