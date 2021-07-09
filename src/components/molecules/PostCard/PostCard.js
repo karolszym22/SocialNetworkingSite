@@ -51,10 +51,11 @@ border: 1px solid black;
 
 class PostCard extends Component 
 {
-  state: {
+  state = {
     redirect: false,
   };
 
+checkSpecificPost = () => this.setState({redirect: true});
 
 
 
@@ -63,8 +64,16 @@ render() {
 
 const {id,user, content, articleUrl, created} = this.props;
 
+
+if(this.state.redirect)
+{
+  return <Redirect to={`/${id}`} />;
+}
+
+
+
   return (
-    <Container>
+    <Container onClick={this.checkSpecificPost}>
       <AuthorContainer>
         <AuthorImage>
             <Image src="https://yt3.ggpht.com/ytc/AAUvwngEMVOlwtrxr1BTvs5RFGirsuzZ6YeOvdwCv2UNUg=s900-c-k-c0x00ffffff-no-rj"/>
