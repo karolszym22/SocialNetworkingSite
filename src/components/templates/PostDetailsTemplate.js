@@ -8,7 +8,7 @@ const PostDetailTemplate = ({children}) =>
 (
     <UserPageTemplete>
        {children}
-       <Link to="/">adasdas</Link>
+       <Link to="/">Wróć</Link>
     </UserPageTemplete>
 )
 

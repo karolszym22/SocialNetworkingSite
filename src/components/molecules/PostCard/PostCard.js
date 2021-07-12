@@ -67,7 +67,7 @@ const {id,user, content, articleUrl, created} = this.props;
 
 if(this.state.redirect)
 {
-  return <Redirect to={`/${id}`} />;
+  return <Redirect to={`posts/${id}`} />;
 }
 
 
