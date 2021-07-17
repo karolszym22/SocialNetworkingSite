@@ -45,6 +45,7 @@ const Posts = () => (
     {posts.map(({user,content,id}) => (
     <PostCard
 
+      id ={id}
       user={user}
       content= {content}
       key = {id}
