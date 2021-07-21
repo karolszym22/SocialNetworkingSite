@@ -24,7 +24,7 @@ const UserPageTemplete = ({children}) =>
 
 UserPageTemplete.propsTypes = 
 {
-    children: PropTypes.element.isRequred,
+    children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
 }
 
 
