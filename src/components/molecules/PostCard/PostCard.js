@@ -92,8 +92,8 @@ if(this.state.redirect)
 }
 
 PostCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  created: PropTypes.string.isRequired,
+  
+
   articleUrl: PropTypes.string,
   content: PropTypes.string.isRequired,
 }
