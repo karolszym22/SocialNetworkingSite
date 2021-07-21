@@ -7,7 +7,7 @@ const PreviewPost = ({ match }) =>
 (
     <>
       <PostDetailsTemplate>
-        <p>asdasdasdasaaaaaaaaaad</p>
+    <a>sdasdasdas</a>
       </PostDetailsTemplate>
     </>
 );
