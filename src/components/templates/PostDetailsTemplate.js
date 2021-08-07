@@ -8,6 +8,7 @@ const PostDetailTemplate = ({children}) =>
 (
     <UserPageTemplete>
        {children}
+       {console.log(children)};
        <Link to="/">Wróć</Link>
     </UserPageTemplete>
 )
