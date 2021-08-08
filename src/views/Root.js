@@ -2,14 +2,16 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import PostsContainer from '../components/templates/PostsContainer'
 import PostsHistory from '../views/PostsHistory'
+import { Provider } from 'react-redux';
 import Posts from '../views/Posts'
+import store from '../store/index'
 import UserProfile from '../views/UserProfile'
 import PreviewPost  from './PrieviewPost';
 import { routes } from '../components/routes/routes';
 
 const Root = () => 
 (
-  
+  <Provider store={store} >
   <BrowserRouter> 
     <PostsContainer>
         <Switch>
@@ -22,6 +24,7 @@ const Root = () =>
         
     </PostsContainer>
   </BrowserRouter>
+  </Provider>
 )
 
 
