@@ -22,7 +22,7 @@ const Posts = ({posts})  => (
       user={user}
       content= {content}
       key = {id}
-    
+      postType = "posts"
     
     
     />) )}

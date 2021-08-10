@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import ReactionButton from '../../atoms/Button/reactionButtons/ReactionButton';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom'
-
+import { connect } from 'react-redux';
+import { removeItem } from '../../actions';
 
 const Container = styled.div`
 border: 1px solid black;
@@ -62,7 +63,7 @@ checkSpecificPost = () => this.setState({redirect: true});
 
 render() {
 
-const {id,user, content, articleUrl, created} = this.props;
+const {id,user, content,removeItem,postType} = this.props;
 
 
 if(this.state.redirect)
@@ -73,7 +74,8 @@ if(this.state.redirect)
 
 
   return (
-    <Container onClick={this.checkSpecificPost}>
+    <Container>
+      <ReactionButton  onClick={this.checkSpecificPost}>Wejdz w komentarz</ReactionButton>
       <AuthorContainer>
         <AuthorImage>
             <Image src="https://yt3.ggpht.com/ytc/AAUvwngEMVOlwtrxr1BTvs5RFGirsuzZ6YeOvdwCv2UNUg=s900-c-k-c0x00ffffff-no-rj"/>
@@ -83,8 +85,9 @@ if(this.state.redirect)
       <PostContent>
           <p>{content}</p>
       </PostContent>
-      <ReactionButton/>
+      <ReactionButton onClick={() => removeItem(postType,id)}>Usuń</ReactionButton>
         <p>Fakebook</p>
+
     </Container>
   
 );
@@ -95,13 +98,25 @@ PostCard.propTypes = {
   
 
   articleUrl: PropTypes.string,
+  postType: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
 }
 
 PostCard.defaultProps = {
+
+  postType: 'posts',
   twitterName: null,
   articleUrl: null,
 }
 
+const mapDispatchToProps = dispatch => (
+  {
+    removeItem: (itemType, id) => dispatch(removeItem(itemType, id)),
+  }
+)
 
-export default PostCard
+export default connect(
+  null, 
+  mapDispatchToProps
+  
+  )(PostCard)

@@ -1,5 +1,6 @@
 import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 
+
 const initialState = 
 {
     posts : 
@@ -34,7 +35,22 @@ const initialState =
 
 
 const rootReducer = (state = initialState, action) => {
-  return state
+  
+   switch (action.type)
+   {
+       case ('DELETE_POST'):
+           return {
+               ...state,[action.payload.itemType]: [
+                   ...state[action.payload.itemType].filter(item => item.id !== action.payload.id),
+               ],
+
+               
+           };
+           default:
+            return state;
+   };
+   
+
 };
 
 
