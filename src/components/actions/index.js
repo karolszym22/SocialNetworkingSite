@@ -10,3 +10,18 @@ export const removeItem = (itemType, id) =>
         
     };
 };
+
+
+export const addItem = (itemType,itemContent) =>
+{   
+    const getId = () => 23;
+    return{
+        type: "DELETE_POST",
+        payload: {
+            itemType,
+            itemContent,
+            id: getId(),
+        },
+        
+    };
+};
