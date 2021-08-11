@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../../theme/GlobalStyle';
 import { theme } from '../../theme/mainTheme';
 import { withRouter } from 'react-router';
-import PageContext from 'context';
+
 
 class PostsContainer extends Component {
   state = {
@@ -40,18 +40,14 @@ class PostsContainer extends Component {
    render()
    {
      const { children } = this.props;
-     const { pageType } = this.state;
 
      return (
        <div>
-         <PageContext.Provider value={pageType}>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
       {children}
       </ThemeProvider>
-      </PageContext.Provider>
       </div>
-      
      )
    }
   
