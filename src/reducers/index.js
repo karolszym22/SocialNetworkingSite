@@ -38,10 +38,22 @@ const rootReducer = (state = initialState, action) => {
   
    switch (action.type)
    {
-       case ('DELETE_POST'):
+       case 'DELETE_POST':
            return {
                ...state,[action.payload.itemType]: [
                    ...state[action.payload.itemType].filter(item => item.id !== action.payload.id),
+               ],
+
+               
+           };
+         
+
+       case 'ADD_POST':
+           return {
+               ...state,
+               [action.payload.itemType]: [
+                   ...state[action.payload.itemType],
+                   action.payload.itemContent
                ],
 
                
