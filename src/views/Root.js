@@ -20,6 +20,7 @@ const Root = () =>
           <Route  path={routes.post} component={PreviewPost} />
           <Route path={routes.messages} component={PostsHistory} />
           <Route path={routes.userInformations} component={UserProfile} />
+          
         </Switch>
         
     </PostsContainer>

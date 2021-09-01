@@ -26,20 +26,20 @@ const AddPost = ({postType, addItem}) =>
     
      
        <Formik 
-        initialValues = {{title: '', content: ''}}
-        onSubmit={(values, { setSubmitting }) =>
+        initialValues = {{user: 'Karol Szymański', content: '', id: 9 }}
+        onSubmit={values =>
        {
-        console.log(values);
-        setSubmitting(false);
+         addItem(postType,values);
+       
        }}
 
 
        >
 
-         {({isSubmitting}) => 
+         {({values, errors, touched, handleChange, handleBlur,handleSubmit,isSubmitting}) => 
          (
            <Form>
-           <Input as={Field} type ="text" name="title"  placeholder="title"></Input>
+           <Input as={Field} onChange={handleChange} onBlur={handleBlur} type ="text" name="content"  placeholder="content"></Input>
            <Button
              
              type = "submit"

@@ -4,5 +4,6 @@ export const routes =
     postsContainer: '/posts',
     post: '/posts/:id',
     userInformations: '/informations',
-    messages: '/messages'
+    messages: '/messages',
+    login: '/login'
 }

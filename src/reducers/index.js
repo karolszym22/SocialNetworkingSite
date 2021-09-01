@@ -55,7 +55,7 @@ const rootReducer = (state = initialState, action) => {
                    ...state[action.payload.itemType],
                    action.payload.itemContent
                ],
-
+               
                
            };
            default:

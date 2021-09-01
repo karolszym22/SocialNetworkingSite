@@ -13,7 +13,7 @@ export const removeItem = (itemType, id) =>
 
 export const addItem = (itemType,itemContent) =>
 {   
-   
+   console.log(itemContent);
     
     return{
         type: "ADD_POST",
