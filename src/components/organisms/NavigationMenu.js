@@ -38,7 +38,7 @@ const NavigationMenu = () =>
             <HeaderButton as={NavLink} to="/" icon={friendsIcon} activeclass="active"  />
             <HeaderButton as={NavLink} to='/messages' icon={messageIcon} activeclass="active"  />
             <HeaderButton as={NavLink} to='/informations' icon={informationIcon} activeclass="active" />
-            <HeaderButton as={NavLink} to='/signIn' icon={logoutIcon}  />
+            <HeaderButton as={NavLink} to='/login' icon={logoutIcon}  />
             </HeaderMenu> 
     </Header>
 )
