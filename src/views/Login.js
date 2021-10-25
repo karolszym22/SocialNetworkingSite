@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Formik, Form, Field } from 'formik';
-
+import { Formik} from 'formik';
+import SignIn from '../components/organisms/LoginPanel';
 const Login = () => 
 (
     <div>
@@ -22,7 +22,7 @@ const Login = () =>
             ;}}
             >
                 {()=>(
-                    console.log("sdsds")
+                    <SignIn></SignIn>
                 )}
         </Formik>
     </div>
