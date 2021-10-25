@@ -22,11 +22,7 @@ const Login = () =>
             ;}}
             >
                 {()=>(
-                    <Form>
-                    <Field name="username" type="text"/>
-                    <Field name="password" type="password"/>
-                    <button type='submit'>Zaloguj się</button>
-                    </Form>
+                    console.log("sdsds")
                 )}
         </Formik>
     </div>
